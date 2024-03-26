@@ -15,7 +15,7 @@ const Sports = () => {
 
             <div className="grid gap-2 sm:gap-4 grid-cols-2 mt-16 lg:grid-cols-4 md:grid-cols-3  gap-y-5 sm:grid-cols-2 pa  sm:gap-y-14 xl:grid-cols-5">
                 {sportsData.map((item) => (
-                    <SportsCard key={item.name + item.id} {...item} />
+                    <SportsCard key={item.id} {...item} />
                 ))}
             </div>
             <div className="flex justify-center items-center my-6 ">
