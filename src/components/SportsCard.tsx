@@ -5,11 +5,11 @@ import Image from "next/image";
 interface Props {
     imgURL: any;
     name: string;
-    events: string;
-    sport: string;
-    desc?: string; // Making desc property optional
+    events?: string; // Making events property optional
+    sport?: string;  // Making sport property optional
+    desc?: string;   // Making desc property optional
 }
-const SportsCard: React.FC<Props> = ({ imgURL, name, events, sport, desc = "" }) => {
+const SportsCard: React.FC<Props> = ({ imgURL, name, events, sport, desc }) => {
     return (
 
         <div className="flex flex-col flex-1 w-full max-sm:w-full h-[480px] justify-start   sm:h-[511px] bg-[#3B3E47] px-0  py-0  sm:px-2 sm:py-2">
