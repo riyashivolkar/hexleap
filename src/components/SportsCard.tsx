@@ -7,7 +7,7 @@ interface Props {
     name: string;
     events: string;
     sport: string;
-    desc: string;
+    desc?: string; // Making desc property optional
 }
 const SportsCard: React.FC<Props> = ({ imgURL, name, events, sport, desc }) => {
     return (
