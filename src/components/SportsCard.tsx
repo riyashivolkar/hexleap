@@ -17,7 +17,8 @@ const SportsCard: React.FC<Props> = ({ imgURL, name, events, sport, desc }) => {
                 src={imgURL}
                 alt={name}
                 className=" object-cover   p-2 sm:p-0  sm:h-[385px] h-[75%] w-full "
-
+                width={1080}
+                height={1080}
 
             />
 
